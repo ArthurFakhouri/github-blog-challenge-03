@@ -47,6 +47,7 @@ export const Actions = styled.div`
 
 export const Infos = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
 
     & > span {
