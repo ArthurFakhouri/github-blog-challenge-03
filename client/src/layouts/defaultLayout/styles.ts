@@ -5,7 +5,12 @@ export const LayoutContainer = styled.div`
 `
 
 export const MainContent = styled.main`
-    margin: calc(0px - 5rem) 18rem 0;
     display: flex;
     flex-direction: column;
+    margin: calc(0px - 5rem) .5rem 0;
+
+    @media only screen and (min-width: 1440px) {
+        margin-left: 18rem;
+        margin-right: 18rem;
+    }
 `

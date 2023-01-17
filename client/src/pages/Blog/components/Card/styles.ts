@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.article`
     padding: 2rem;
+    width: 100%;
     background-color: ${props => props.theme["base-post"]};
     border-radius: 10px;
     cursor: pointer;
@@ -19,7 +20,7 @@ export const CardContainer = styled.div`
     & > p {
         overflow: hidden;
         text-overflow: ellipsis;
-        
+
         display: -webkit-box;
         -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
@@ -28,10 +29,10 @@ export const CardContainer = styled.div`
     }
 `
 
-export const CardHeader = styled.div`
+export const CardHeader = styled.header`
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     gap: 1rem;
 
     & > strong {
@@ -42,7 +43,7 @@ export const CardHeader = styled.div`
         line-height: 160%;
     }
 
-    & > span {
+    & > time {
         color: ${props => props.theme["base-span"]};
         font-size: .875rem;
         line-height: 160%;

@@ -27,6 +27,7 @@ export const SearchBarContainer = styled.div`
 export const Publications = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     & > strong {
         color: ${props => props.theme["base-subtitle"]};

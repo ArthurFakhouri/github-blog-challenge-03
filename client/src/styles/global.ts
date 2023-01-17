@@ -36,15 +36,9 @@ export const GlobalStyle = createGlobalStyle`
         background: ${props => props.theme["base-label"]};
     }
 
-    @media (max-width: 1360px) {
+    @media only screen and (max-width: 600px) {
         html {
             font-size: 87.5%;
-        }
-    }
-
-    @media (max-width: 1020px) {
-        html {
-            font-size: 75%;
         }
     }
 `

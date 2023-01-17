@@ -9,17 +9,6 @@ import { GithubInfoContext } from "../../contexts/GithubInfoContext";
 import { Issue } from "./components/Issue";
 import { Actions, BodyIssue, Infos, PostContainer, PostHeader } from "./styles";
 
-interface Publication {
-    id: number;
-    html_url: string;
-    number: number;
-    title: string;
-    body: string;
-    created_at: string;
-    comments: number;
-    user_login: string;
-}
-
 export function Post() {
 
     const params = useParams();

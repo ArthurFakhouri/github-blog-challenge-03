@@ -2,7 +2,6 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faUserGroup, faBuilding } from "@fortawesome/free-solid-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { NavLink } from "react-router-dom";
 import { Avatar, Bio, Data, Info, ProfileContainer, Title } from "./styles";
 
 interface User {
@@ -22,7 +21,7 @@ interface UserProps {
 export function Profile({ user }: UserProps) {
     return (
         <ProfileContainer>
-            <Avatar src={user.avatar_url} alt="" />
+            <Avatar src={user.avatar_url} alt="user photo" />
             <Data>
                 <Title>
                     <strong>{user.name}</strong>

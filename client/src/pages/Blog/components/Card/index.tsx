@@ -37,7 +37,7 @@ export function Card({ publication }: CardProps) {
         <CardContainer onClick={handleClickedCard}>
             <CardHeader>
                 <strong>{publication.title}</strong>
-                <span>{publishedAt}</span>
+                <time dateTime={publication.created_at}>{publishedAt}</time>
             </CardHeader>
             <p>{publication.body}</p>
         </CardContainer>
