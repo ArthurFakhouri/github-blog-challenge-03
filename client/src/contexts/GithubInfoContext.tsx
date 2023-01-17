@@ -78,7 +78,7 @@ export function GithubInfoContextProvider({ children }: GithubInfoContextProvide
     async function fetchGithubPublications(filter?: string) {
         if (!filter)
             filter = '';
-        const query = `${filter} repo:${username}/${repo}`;
+        const query = `${filter} repo:${username}/${repo} is:issue`;
         const res = await api.get('search/issues', {
             params: {
                 q: query,
