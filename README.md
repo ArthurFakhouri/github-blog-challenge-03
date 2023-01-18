@@ -14,6 +14,8 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
+<a target="_blank" href="https://github-blog-chi-ten.vercel.app">Demo</a>
+
 ## 🈸 Projeto
 
 Github Blog é um projeto simples de consultas da API do Github para coletar dados do usuário e issues de um determinado repositório, que foi criado com o intuito de reforçar os conceitos de ReactJS.
